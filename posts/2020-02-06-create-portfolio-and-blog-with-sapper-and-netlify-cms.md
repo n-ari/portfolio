@@ -24,9 +24,31 @@ tags:
 
 [Netlify CMS の公式チュートリアル](https://www.netlifycms.org/docs/add-to-your-site/)の通りに進めば大丈夫です。`index.html` には途中で出てくる html ファイルと Netlify Identity Widget を書けば問題なかったです。`config.yml` はお好みで。
 
-[参考: 該当コミットのconfig.yml](https://github.com/n-ari/portfolio/blob/e4014baf98982b2485184c06aaf19f80c9e4c27a/static/admin/config.yml)
+[参考: 該当コミットのconfig.yml](https://github.com/n-ari/portfolio/blob/c14708463a63f208cdbfceaced11933a52b73fa1/static/admin/config.yml)
 
 ここまで出来たらファイル的には完成で、後は Netlify にデプロイして、Netlify CMS 用の Identity を取得、Content Manager のページからブログ記事が書けることを確認して終わりです。
+
+## 注意点
+
+### Netlify CMS での日本語入力が怪しい
+
+何が問題か知らないしまだ調べてないけど、たまに入力した文字が消えたりカーソルが飛んだりします。
+
+### Netlify CMS の slug がタイトルから自動生成される
+
+日本語タイトルを入れると、そのまま日本語が slug になるので、Sapper でビルドがこけます。
+
+Open な issue に以下のようなものがあり、その中のコメントにある手法を適用すれば解決しそうです。
+
+[Make sluggification visible, customizable, and fail\-safe · Issue \#445 · netlify/netlify\-cms](https://github.com/netlify/netlify-cms/issues/445#issuecomment-463253934)
+
+`fields.slug` を用意し、`slug` からそれを参照するというもの。
+
+私は `fields.custom-slug` という項目を用意するようにしています。
+
+### fields は基本的に全部必須
+
+そのうちサムネイル画像とか使うかもしれないなと思って `thumbnail` の項目を作ったんですが、基本的に必須項目になるらしく、急いで No Image の画像を作ったりしました。
 
 ## 参考にしたページ
 

@@ -1,0 +1,8 @@
+{
+	"background_color": "#ffffff",
+	"theme_color": "#333333",
+	"name": "n-ari.tech",
+	"short_name": "n-ari.tech",
+	"display": "minimal-ui",
+	"start_url": "/"
+}

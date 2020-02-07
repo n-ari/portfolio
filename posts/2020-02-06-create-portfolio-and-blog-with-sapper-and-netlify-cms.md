@@ -1,7 +1,7 @@
 ---
 title: Sapper + Netlify CMS でポートフォリオとブログを作った
 custom_slug: create-portfolio-and-blog-with-sapper-and-netlify-cms
-date: 2020-02-07T11:36:00.000Z
+date: 2020-02-07 20:36
 thumbnail: /img/noimage.png
 tags:
   - diary

@@ -43,6 +43,11 @@
 		display: block;
 		margin: 0 auto;
 	}
+
+	.tilt {
+		display: inline-block;
+		transform: rotate(-15deg);
+	}
 </style>
 
 <svelte:head>
@@ -50,7 +55,7 @@
 </svelte:head>
 
 <header>
-	<h1>n-ari.tech</h1>
+	<h1>n-ari.t<span class="tilt">e</span>ch</h1>
 </header>
 
 <div id="nari">

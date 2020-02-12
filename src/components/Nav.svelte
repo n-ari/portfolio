@@ -1,6 +1,5 @@
 <script>
 	export let segment;
-	export let title;
 </script>
 
 <style>
@@ -66,11 +65,16 @@
 		padding: 1em 0.5em;
 		display: block;
 	}
+
+	.tilt {
+		display: inline-block;
+		transform: rotate(-15deg);
+	}
 </style>
 
 <nav>
 	<h2>
-		<a href="/">{title === undefined ? "n-ari.tech" : title}</a>
+		<a href="/">n-ari.t<span class="tilt">e</span>ch</a>
 	</h2>
 	<ul>
 		<li><a class:selected='{segment === undefined}' href='.'>home</a></li>

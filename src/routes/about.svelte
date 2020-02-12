@@ -1,11 +1,14 @@
+<style>
+</style>
+
 <script>
-	import Biography from "../components/Biography.svelte";
-	import Belong from "../components/Belong.svelte";
-	import Creation from "../components/Creation.svelte";
-	import CompetitiveProgramming from "../components/CompetitiveProgramming.svelte";
-	import CTF from "../components/CTF.svelte";
-	import Writing from "../components/Writing.svelte";
-	import Other from "../components/Other.svelte";
+	import Biography from "../components/about/Biography.svelte";
+	import Belong from "../components/about/Belong.svelte";
+	import Creation from "../components/about/Creation.svelte";
+	import CompetitiveProgramming from "../components/about/CompetitiveProgramming.svelte";
+	import CTF from "../components/about/CTF.svelte";
+	import Writing from "../components/about/Writing.svelte";
+	import Other from "../components/about/Other.svelte";
 </script>
 
 <svelte:head>

@@ -18,19 +18,6 @@
 </script>
 
 <style>
-	/*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
-	.content :global(h2) {
-		font-size: 1.4em;
-		font-weight: 500;
-	}
-
 	.content :global(pre) {
 		background-color: #f9f9f9;
 		box-shadow: inset 1px 1px 5px rgba(0,0,0,0.05);
@@ -45,11 +32,24 @@
 	} */
 
 	.content :global(ul) {
-		line-height: 1.5;
+		position: relative;
+		padding: 0 0.5em;
+		list-style-type: none;
 	}
-
-	.content :global(li) {
-		margin: 0 0 0.5em 0;
+	.content :global(ul) :global(li) {
+		position: relative;
+		padding: 0.1em 0.3em 0.4em 1.5em;
+	}
+	.content :global(ul) :global(li)::before {
+		position: absolute;
+		content: '';
+		top: 0.65em;
+		left: 0.3em;
+		width: 0.3em;
+		height: 0.3em;
+		border-right: solid 3px #333;
+		border-bottom: solid 3px #333;
+		transform: rotate(-45deg);
 	}
 </style>
 
@@ -58,7 +58,7 @@
 </svelte:head>
 
 <h1>{post.title}</h1>
-<h4>{post.date}</h4>
+<p>投稿日時: {post.date}</p>
 
 <div class='content'>
 	{@html post.html}

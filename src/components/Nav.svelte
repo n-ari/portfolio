@@ -26,6 +26,10 @@
 		border: none;
 		margin: 0.5em 0.5em;
 		float: left;
+		font-size: 1.5em;
+	}
+	h2:before {
+		content: none;
 	}
 
 	li {

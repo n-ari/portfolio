@@ -1,4 +1,5 @@
 <script>
+	import BetterList from "../components/BetterList.svelte";
 </script>
 
 <style>
@@ -39,17 +40,18 @@
 	#nari {
 		text-align: center;
 		font-size: 20em;
-		margin: 0 0 0 0;
+		margin: 0 0 0.1em 0;
 		padding: 0 0 0 0;
+		line-height: 1;
 		font-family: 'Noto Serif JP', serif;
 	}
 
 	article {
-		border-top: solid 2px #333;
-		width: 20em;
+		/* border-top: solid 2px #333; */
+		width: 22em;
 		display: block;
 		margin: 0 auto;
-		padding: 1em 2em;
+		/* padding: 0em 0.5em; */
 	}
 </style>
 
@@ -70,7 +72,7 @@
 
 <article>
 	<h3>更新履歴</h3>
-	<ul class="better-list">
+	<BetterList>
 		<li>2020/02/07 サイトを公開しました。</li>
-	</ul>
+	</BetterList>
 </article>

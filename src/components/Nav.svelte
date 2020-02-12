@@ -4,6 +4,9 @@
 </script>
 
 <style>
+	/* Aldrich font */
+	@import url('https://fonts.googleapis.com/css?family=Aldrich&display=swap');
+
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
@@ -27,6 +30,7 @@
 		margin: 0.5em 0.5em;
 		float: left;
 		font-size: 1.5em;
+		font-family: 'Aldrich', sans-serif;
 	}
 	h2:before {
 		content: none;

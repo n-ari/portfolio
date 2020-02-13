@@ -21,7 +21,11 @@
 
         /* text-align: center; */
         font-size: 0.8em;
-	}
+    }
+    
+    a::after {
+        content: none;
+    }
 
     a.ac-red {
         text-decoration: none;
@@ -51,15 +55,15 @@
 <div id="ratings">
     <ul>
         <li>
-            AtCoder: <a href="https://atcoder.jp/users/rickytheta" class="ac-red">rickytheta</a><br>
+            AtCoder: <a href="https://atcoder.jp/users/rickytheta" class="ac-red" target="_blank" rel="nofollow noopener">rickytheta</a><br>
             Rating: <span class="ac-red">2807</span> (highest: <span class="ac-red">2866</span>)
         </li>
         <li>
-            TopCoder: <a href="https://www.topcoder.com/members/rickytheta/details/?track=DATA_SCIENCE&subTrack=SRM" class="tc-red">rickytheta</a><br>
+            TopCoder: <a href="https://www.topcoder.com/members/rickytheta/details/?track=DATA_SCIENCE&subTrack=SRM" class="tc-red" target="_blank" rel="nofollow noopener">rickytheta</a><br>
             Rating: <span class="tc-red">2411</span> (highest: <span class="tc-red">2418</span>)
         </li>
         <li>
-            CodeForces: <a href="http://codeforces.com/profile/rickytheta" class="cf-red">rickytheta</a><br>
+            CodeForces: <a href="http://codeforces.com/profile/rickytheta" class="cf-red" target="_blank" rel="nofollow noopener">rickytheta</a><br>
             Rating: <span class="cf-red">2444</span> (highest: <span class="cf-red">2444</span>)
         </li>
     </ul>

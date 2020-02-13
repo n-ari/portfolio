@@ -18,6 +18,12 @@ const renderer = new marked.Renderer();
 renderer.code = (code, lang)=>{
 	return `<pre><code class="${lang} hljs">${hljs.highlight(lang, code).value}</code></pre>`;
 }
+const linkRenderer = renderer.link;
+renderer.link = (href, title, text)=>{
+	const html = linkRenderer.call(renderer, href, title, text);
+	// TODO: check if href is internal link
+	return html.replace(/^<a /, "<a target=\"_blank\" rel=\"nofollow noopener\" ");
+}
 marked.setOptions({
 	breaks: true,
 	langPrefix: "",

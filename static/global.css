@@ -5,10 +5,6 @@ body {
 	margin: 0;
 }
 
-a {
-	color: inherit;
-}
-
 code {
 	font-family: menlo, inconsolata, monospace;
 	font-size: calc(1em - 2px);
@@ -64,6 +60,21 @@ p, li {
 }
 strong {
 	font-weight: bold;
+}
+a {
+	color: inherit;
+}
+a[target="_blank"]:after {
+	font-family: "FontAwesome";
+	content: "\f35d";
+	font-size: 0.7em;
+	padding: 0 0 0 0.3em;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	line-height: 1;
 }
 
 /* heading tags */

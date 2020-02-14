@@ -62,7 +62,7 @@
 	成
 </div>
 
-<p>@n-ari のポートフォリオサイト/ブログです。</p>
+<p>portfolio / blog</p>
 
 <article>
 	<h3>更新履歴</h3>

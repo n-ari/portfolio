@@ -45,7 +45,8 @@ try {
 		const post = {
 			slug: fileName.slice(0, -3),
 			title: content.attributes.title,
-			date: content.attributes.date,
+			publish_date: content.attributes.publish_date,
+			update_date: content.attributes.update_date,
 			html: marked(content.body),
 		};
 		posts.push(post);

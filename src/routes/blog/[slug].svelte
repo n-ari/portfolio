@@ -58,7 +58,12 @@
 </svelte:head>
 
 <h1>{post.title}</h1>
-<p>投稿日時: {post.date}</p>
+<p>
+	投稿日時: {post.publish_date}
+	{#if post.publish_date !== post.update_date}
+		(更新日時: {post.update_date})
+	{/if}
+</p>
 
 <div class='content'>
 	{@html post.html}

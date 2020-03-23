@@ -1,7 +1,8 @@
 <style>
     ul {
         position: relative;
-        padding: 0 0.5em;
+        padding: 0;
+        padding-left: 1em;
         list-style-type: none;
     }
     ul :global(li) {
